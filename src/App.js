@@ -2,11 +2,9 @@
 import React, {useState, useEffect}  from 'react';
 import axios from "axios";
 
-const traerDatos = async () => {
+const traerDatos = async (url) => {
   return await axios
-    .get(
-      "http://api.openweathermap.org/data/2.5/weather?q=Caracas&lang=es&units=metric&appid=cfdf46ac4ccb5e3a4775488af2e57ce0"
-    )
+    .get(url)
     .then((res) => {
       console.log(res.data);
       return res.data;
@@ -25,7 +23,7 @@ function DatosBasicos() {
 
   useEffect(() =>{
     const montarDatos = async () => {
-      const resultado = await traerDatos();
+      const resultado = await traerDatos("http://api.openweathermap.org/data/2.5/weather?q=Caracas&lang=es&units=metric&appid=cfdf46ac4ccb5e3a4775488af2e57ce0");
       console.log(resultado);
       setClima(resultado);
       setCargando(false);
