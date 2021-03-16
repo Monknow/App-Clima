@@ -1,11 +1,6 @@
-//import './App.css';
-import useFetchClima from "./useFetchClima";
-
-
-
 function HeaderDatos(props) {
 
-  const datos = useFetchClima(props.url);
+  const datos = props.datos;
   const clima = datos.clima;
   const cargando = datos.cargando;
 
@@ -23,7 +18,7 @@ function HeaderDatos(props) {
           <h4>{clima.current.weather[0].description}</h4>
           <img 
           src={`http://openweathermap.org/img/wn/${clima.current.weather[0].icon}@2x.png`} 
-          alt={`Imgen de${clima.current.weather[0].description}`}/>
+          alt={`Imagen de${clima.current.weather[0].description}`}/>
         </div>
         )}
       </header>
