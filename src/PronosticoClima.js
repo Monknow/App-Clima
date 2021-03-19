@@ -11,10 +11,8 @@ function CuerpoDatos() {
   const [nombreLugarCargado, setNombreLugarCargado] = useState(true);
 
   const datosClima = useFetchClimaPro(lugarBuscado, nombreLugarCargado);
-  const datos = datosClima.datosLugarBuscado;
-  const cargadoDatosClima = datosClima.cargadoDatosClima;
-
-  console.log(datos, cargadoDatosClima);
+  const datos = datosClima.datosClima;
+  const cargandoDatosClima = datosClima.cargandoDatosClima;
 
     return (
       <div>
@@ -23,7 +21,7 @@ function CuerpoDatos() {
           <button type="button" onClick={() => {setLugarBuscado(lugarEnBusqueda); setNombreLugarCargado(false)}}>Buscar</button>
         </div>
         <div> 
-          {cargadoDatosClima? (
+          {cargandoDatosClima? (
             <h1>Cargando...</h1>
           ):(
           <div>
