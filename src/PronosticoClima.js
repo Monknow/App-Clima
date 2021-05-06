@@ -1,35 +1,43 @@
 import {useState} from "react";
-import useFetchClimaPro from "./useFetchClimaPro";
-import DatosPrincipales from "./pronosticoClima/DatosPrincipales"
-import DatosBasicos from "./pronosticoClima/DatosBasicos"
-import PronosticoSemana from "./pronosticoClima/PronosticoSemana"
-import GraficaDia from "./pronosticoClima/GraficaDia"
+import useFetchClimaPorCoords from "./customHooks/useFetchClimaPorCoords";
+import useFetchClimaCiudadesPorNombre from "./customHooks/useFetchClimaCiudadesPorNombre";
+import Contenido from "./Contenido";
 
-function CuerpoDatos() {
+
+function PronosticoClima() {
   const [lugarEnBusqueda, setLugarEnBusqueda] = useState(null);
   const [lugarBuscado, setLugarBuscado] = useState(null);
-  const [nombreLugarCargado, setNombreLugarCargado] = useState(true);
+  const [lugarCargando, setLugarCargando] = useState(true);
 
-  const datosClima = useFetchClimaPro(lugarBuscado, nombreLugarCargado);
-  const datos = datosClima.datosClima;
-  const cargandoDatosClima = datosClima.cargandoDatosClima;
+  const [datosCiudad, setDatosCiudad] = useState(null);
+  const [coordsCiudad, setCoordsCiudad] = useState(null);
+  const [coordsCiudadCargando, setCoordsCiudadCargando] = useState(true);
 
+  const resultadoClimaCiudadesPorNombre = useFetchClimaCiudadesPorNombre(lugarBuscado, lugarCargando);
+  const resultadoClimaPorCoords = useFetchClimaPorCoords(coordsCiudad, coordsCiudadCargando);
+
+  const mensajeResultado = resultadoClimaCiudadesPorNombre.mensajeResultado;
+  const mensajeDeCarga = resultadoClimaCiudadesPorNombre.cargando;
+
+  const pruebaLevantarEstado = (datosCiudadLevantados, coordsCiudadLevantados, coordsCiudadCargandoLevantados) =>{
+    setDatosCiudad(datosCiudadLevantados);
+    setCoordsCiudad(coordsCiudadLevantados);
+    setCoordsCiudadCargando(coordsCiudadCargandoLevantados);
+    
+  }
+
+  
     return (
       <div>
         <div>
-          <input type="text" onChange={(event) => setLugarEnBusqueda(event.target.value)}/>
-          <button type="button" onClick={() => {setLugarBuscado(lugarEnBusqueda); setNombreLugarCargado(false)}}>Buscar</button>
+          <input type="text" onChange={(event) => {setLugarEnBusqueda(event.target.value); setLugarCargando(true)}}/>
+          <button type="button" onClick={() => {setLugarBuscado(lugarEnBusqueda); setLugarCargando(false); setCoordsCiudadCargando(true);}}>Buscar</button>
         </div>
         <div> 
-          {cargandoDatosClima? (
-            <h1>Cargando...</h1>
-          ):(
-          <div>
-            <DatosPrincipales datos={datos}></DatosPrincipales>
-            <DatosBasicos datos={datos}></DatosBasicos>
-            <PronosticoSemana datos={datos}></PronosticoSemana>
-            <GraficaDia datos={datos.hourly}></GraficaDia>
-          </div>
+          {mensajeDeCarga? (
+            <h2>{mensajeResultado}</h2>
+          ):(   
+            <Contenido climaCiudadesPorNombre={resultadoClimaCiudadesPorNombre} datosCiudad={datosCiudad} coordsCiudadCargando={coordsCiudadCargando} climaPorCoords={resultadoClimaPorCoords} pruebaLevantarEstado={pruebaLevantarEstado}></Contenido>
           )}
         </div>
       </div>
@@ -38,4 +46,4 @@ function CuerpoDatos() {
 
 }
 
-export default CuerpoDatos;
+export default PronosticoClima;

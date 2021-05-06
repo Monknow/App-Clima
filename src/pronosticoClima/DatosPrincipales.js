@@ -1,10 +1,10 @@
 function HeaderDatos(props) {
 
   const datos = props.datos;
-
+  const datosNombreLugar = props.datosNombreLugar;
     return (
       <header> 
-          <h1>{datos.timezone}</h1>
+          <h1>{`${datosNombreLugar.name}, ${datosNombreLugar.sys.country}`}</h1>
           <h2>{`${datos.current.temp}°`}</h2>
           <h3>{`${Math.floor(datos.daily[0].temp.min)}°`}/
               {`${Math.floor(datos.daily[0].temp.max)}°`}

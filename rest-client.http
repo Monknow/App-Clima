@@ -7,3 +7,7 @@ GET http://openweathermap.org/img/wn/02d@2x.png
 ###
 
 GET https://api.openweathermap.org/data/2.5/onecall?lat=10.488&lon=-66.8792&lang=es&exclude=minutely,&units=metric&appid=cfdf46ac4ccb5e3a4775488af2e57ce0    
+
+###
+
+GET http://openweathermap.org/data/2.5/find?callback=?&q=merida&type=like&sort=population&cnt=30&appid=439d4b804bc8187953eb36d2a8c26a02
