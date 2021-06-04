@@ -10,7 +10,7 @@ function CiudadesBuscadas(props){
         <div>
             {
                 cargando?(
-                    <h2>Cargando</h2>
+                    <h1>Cargandioo</h1>
                 ):(
                     <div>
                         {ciudades.list.map((datosCiudad)=>{

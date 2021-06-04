@@ -25,7 +25,7 @@ function PronosticoClima() {
     setCoordsCiudadCargando(coordsCiudadCargandoLevantados);
     
   }
-
+  console.log(mensajeResultado);
   
     return (
       <div>

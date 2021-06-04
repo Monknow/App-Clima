@@ -15,13 +15,13 @@ function useFetchClimaCiudadesPorNombre (lugarBuscado,lugarCargando) {
                 const urlLugarBuscado = `http://openweathermap.org/data/2.5/find?callback=?&q=${lugarBuscado}&lang=es&units=metric&&type=like&sort=population&cnt=30&appid=439d4b804bc8187953eb36d2a8c26a02`
     
                 setCargando(true);
+                setMensajeResultado("Cargando");
 
                 await traerDatos(urlLugarBuscado)
                 .then((res) =>{
                     const resultadoLimpio = JSON.parse(res.data.replace(/[\\?()]/g, ""));
                     setDatos(resultadoLimpio);
 
-                    console.log(resultadoLimpio);
 
                     switch (true) {
 
