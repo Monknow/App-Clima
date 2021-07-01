@@ -12,14 +12,13 @@ function CuerpoDatos(props){
     console.log(cargando);
 
     return(
-        <div>
+        <div className="cuerpo-datos">
             {
                 cargando?(
                         <h1>Cargando</h1>
                 ):(
-                    <div>
+                    <div className="clima-datos">
                         <DatosPrincipales datos={datos} datosNombreLugar={datosNombre}></DatosPrincipales>
-                        <DatosBasicos datos={datos}></DatosBasicos>
                         <PronosticoSemana datos={datos}></PronosticoSemana>
                         <GraficaDia datos={datos.hourly}></GraficaDia>
                     </div>

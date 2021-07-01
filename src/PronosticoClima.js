@@ -2,6 +2,7 @@ import {useState} from "react";
 import useFetchClimaPorCoords from "./customHooks/useFetchClimaPorCoords";
 import useFetchClimaCiudadesPorNombre from "./customHooks/useFetchClimaCiudadesPorNombre";
 import Contenido from "./Contenido";
+import Buscador from "./Buscador/Buscador";
 
 
 function PronosticoClima() {
@@ -25,19 +26,36 @@ function PronosticoClima() {
     setCoordsCiudadCargando(coordsCiudadCargandoLevantados);
     
   }
-  console.log(mensajeResultado);
+
+  const levantarBusqueda = (lugarEnBusqueda) =>{
+    setLugarBuscado(lugarEnBusqueda); 
+    setLugarCargando(false); 
+    setCoordsCiudadCargando(true);
+  }
+
+  const levantarInput = (event) =>{
+    setLugarEnBusqueda(event.target.value); 
+    setLugarCargando(true);
+  }
   
-    return (
+    return(
       <div>
-        <div>
-          <input type="text" onChange={(event) => {setLugarEnBusqueda(event.target.value); setLugarCargando(true)}}/>
-          <button type="button" onClick={() => {setLugarBuscado(lugarEnBusqueda); setLugarCargando(false); setCoordsCiudadCargando(true);}}>Buscar</button>
-        </div>
+          <Buscador 
+            levantarInput={levantarInput} 
+            levantarBusqueda={levantarBusqueda} 
+            lugarEnBusqueda={lugarEnBusqueda}>
+          </Buscador>
         <div> 
           {mensajeDeCarga? (
-            <h2>{mensajeResultado}</h2>
+            <h2 className="mensaje-resultado">{mensajeResultado}</h2>
           ):(   
-            <Contenido climaCiudadesPorNombre={resultadoClimaCiudadesPorNombre} datosCiudad={datosCiudad} coordsCiudadCargando={coordsCiudadCargando} climaPorCoords={resultadoClimaPorCoords} pruebaLevantarEstado={pruebaLevantarEstado}></Contenido>
+            <Contenido 
+              climaCiudadesPorNombre={resultadoClimaCiudadesPorNombre} 
+              datosCiudad={datosCiudad} 
+              coordsCiudadCargando={coordsCiudadCargando} 
+              climaPorCoords={resultadoClimaPorCoords} 
+              pruebaLevantarEstado={pruebaLevantarEstado}>
+            </Contenido>
           )}
         </div>
       </div>

@@ -55,8 +55,9 @@ function GraficaDia(props) {
   });
 
   return (
-      <div>
-        <ResponsiveContainer width="90%" height={125}>
+      <div className="grafica-dia">
+      <h2 className="grafica-dia-titulo">Grafica del Día</h2>
+        <ResponsiveContainer className="grafica-dia-container" width="100%" height={125}>
             
                 <AreaChart data={datosDia}>
 
@@ -79,9 +80,9 @@ function GraficaDia(props) {
 
         </ResponsiveContainer>
           <div>
-            <button onClick={() => setGraficoEnPantalla(datosGraficos.get("temperatura"))}>Temperatura</button>
-            <button onClick={() => setGraficoEnPantalla(datosGraficos.get("humedad"))}>Humedad</button>
-            <button onClick={() => setGraficoEnPantalla(datosGraficos.get("viento"))}>Viento</button>
+            <button className="grafica-dia-boton" id="grafica-dia-boton-temperatura" onClick={() => setGraficoEnPantalla(datosGraficos.get("temperatura"))}>Temperatura</button>
+            <button className="grafica-dia-boton" id="grafica-dia-boton-humedad" onClick={() => setGraficoEnPantalla(datosGraficos.get("humedad"))}>Humedad</button>
+            <button className="grafica-dia-boton" id="grafica-dia-boton-viento" onClick={() => setGraficoEnPantalla(datosGraficos.get("viento"))}>Viento</button>
 
           </div>
         </div>

@@ -1,4 +1,4 @@
-body {
+*{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +7,224 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #cbf3f0;
+    background-image: url("./overlapping-circles.svg");
+}
+
+
+.nav-top-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: clamp(50px, 6vh, 100px);
+  z-index: 99;
+  position: fixed;
+  box-shadow:rgb (0, 0, 0) 0px 10px 13px -7px, -50px -50px 50px -30px rgba(0,0,0,0);    
+  background-color: #fff;
+}
+
+.nav-top-navbar a{
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+
+}
+
+#link-app-clima{
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: #FF9F1C;
+}
+
+
+.footer-info{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: clamp(50px, 6vh, 100px);
+  z-index: 99;
+  position: fixed;
+  top: calc(100% - 6vh);
+  padding-left: 20px;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  padding: clamp(100px, 7vh, 130px) 0px;
+}
+
+.titulo-app{
+  font-size: clamp(20px, 4vw, 30px);
+  padding: 20px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #fff;
+}
+
+.buscador{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  margin: 20px;
+}
+
+.input-ciudad{
+  font-size: clamp(15px, 2vw, 20px);
+  height: 30px;
+}
+
+.boton-busqueda{
+  background-color: #FF9F1C;
+  padding: 5px 20px;
+  margin: 0px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.boton-busqueda:focus{
+  outline: none;
+}
+
+.mensaje-resultado{
+  font-size: clamp(10px, 3vw, 25px);
+  padding: 20px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #fff;
+  text-align: center;
+}
+
+.ciudad{
+  background-color: rgb(255,255,255, 0.90);
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cuerpo-datos{
+  width: 90vw;
+  background-color: rgb(255,255,255, 0.90);
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.clima-datos{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.pronostico-semana{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.pronostico-semana-dias{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+
+.pronostico-semana-dia{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column-reverse;
+  margin: 20px;
+  text-transform: capitalize;
+}
+
+.pronostico-semana-dia p{
+  margin: 10px 0px;
+}
+
+.pronostico-semana-imagen{
+  background-color: #CBF3F0;
+  border-radius: 50%;
+}
+
+.pronostico-semana-titulo{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.datos-principales-imagen{
+  background-color: #CBF3F0;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+.datos-principales-descripcion{
+  text-transform: capitalize; 
+}
+
+.grafica-dia{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grafica-dia-container{
+  max-width: 90vw;
+}
+
+.grafica-dia-boton{
+  padding: 5px 20px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+#grafica-dia-boton-temperatura{
+  background-color: #f2a735;
+  border: solid 1px #bf790d;
+}
+
+#grafica-dia-boton-humedad{
+  background-color: #4b87cc;
+  border: solid 1px #2b62a1;
+
+}
+
+#grafica-dia-boton-viento{
+  background-color: #a662de;
+  border: solid 1px #7e34a8;
+}
+
+.
+
+.datos-principales{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.datos-principales-header h1, h2, h3{
+  margin: 10px 0px;
 }

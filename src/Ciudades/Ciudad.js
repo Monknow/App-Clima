@@ -1,5 +1,3 @@
-import {useState, useEffect} from "react";
-
 function Ciudad(props){
     const datos = props.datos;
     const cargando = props.cargando;
@@ -7,7 +5,7 @@ function Ciudad(props){
     const temperatura = Math.floor(datos.main.temp - 273.15);
 
     return(
-        <div>
+        <div className="ciudad">
             {
                 cargando?(
                     <h2>Cargando</h2>
