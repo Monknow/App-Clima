@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Monknow/App-Clima/static/css/main.fb572618.chunk.css",
+    "main.js": "/Monknow/App-Clima/static/js/main.e287c5c8.chunk.js",
+    "main.js.map": "/Monknow/App-Clima/static/js/main.e287c5c8.chunk.js.map",
+    "runtime-main.js": "/Monknow/App-Clima/static/js/runtime-main.7fc296db.js",
+    "runtime-main.js.map": "/Monknow/App-Clima/static/js/runtime-main.7fc296db.js.map",
+    "static/js/2.361c0b6a.chunk.js": "/Monknow/App-Clima/static/js/2.361c0b6a.chunk.js",
+    "static/js/2.361c0b6a.chunk.js.map": "/Monknow/App-Clima/static/js/2.361c0b6a.chunk.js.map",
+    "static/js/3.5efb054e.chunk.js": "/Monknow/App-Clima/static/js/3.5efb054e.chunk.js",
+    "static/js/3.5efb054e.chunk.js.map": "/Monknow/App-Clima/static/js/3.5efb054e.chunk.js.map",
+    "index.html": "/Monknow/App-Clima/index.html",
+    "static/css/main.fb572618.chunk.css.map": "/Monknow/App-Clima/static/css/main.fb572618.chunk.css.map",
+    "static/js/2.361c0b6a.chunk.js.LICENSE.txt": "/Monknow/App-Clima/static/js/2.361c0b6a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Monknow/App-Clima/static/media/overlapping-circles.697aba2c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fc296db.js",
+    "static/js/2.361c0b6a.chunk.js",
+    "static/css/main.fb572618.chunk.css",
+    "static/js/main.e287c5c8.chunk.js"
+  ]
+}
