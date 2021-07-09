@@ -19,32 +19,35 @@ function useFetchClimaCiudadesPorNombre (lugarBuscado,lugarCargando) {
 
                 await traerDatos(urlLugarBuscado)
                 .then((res) =>{
-                    const resultadoLimpio = JSON.parse(res.data.replace(/[\\?()]/g, ""));
-                    setDatos(resultadoLimpio);
 
+                    try{
+                        const resultadoLimpio = JSON.parse(res.data.replace(/[\\?()]/g, ""));
 
-                    switch (true) {
-
-                        case resultadoLimpio.list.length === 0:
-                            setCargando(true);
-                            setMensajeResultado("Ciudad no encontrada. Revise su busqueda ");
-                            break;
-                        case res.status === 200:
-                                setCargando(false);
-                                setMensajeResultado("Cargando");
-                            break;
-                        case res.status >= 500:
-                            setCargando(true);
-                            setMensajeResultado("Ha ocurrido un error en el servidor, Intenté más tarde por favor");
-                            break;
-                        default:
-                            setCargando(true);
-                            setMensajeResultado("Ha ocurrido un error desconocido. Intenté más tarde por favor");
-                            break;
+                        switch (true) {
+                            case resultadoLimpio.count === 0:
+                                setCargando(true);
+                                setMensajeResultado("Ciudad no encontrada. Revise su busqueda ");
+                                break;
+                            case res.status === 200:
+                                    setDatos(resultadoLimpio);
+                                    setCargando(false);
+                                    setMensajeResultado("Cargando");
+                                break;
+                            case res.status >= 500:
+                                setCargando(true);
+                                setMensajeResultado("Ha ocurrido un error en el servidor, Intenté más tarde por favor");
+                                break;
+                            default:
+                                setCargando(true);
+                                setMensajeResultado("Ha ocurrido un error desconocido. Intenté más tarde por favor");
+                                break;
+                        }
+                    } catch{
+                        setCargando(true);
+                        setMensajeResultado("Ha ocurrido un error desconocido. Intenté más tarde por favor");
                     }
+
                 });
-
-
                 
             }
             montarDatos();

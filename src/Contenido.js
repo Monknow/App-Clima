@@ -5,18 +5,26 @@ function Contenido(props){
     const climaCiudadesPorNombre = props.climaCiudadesPorNombre;
     const datosCiudad = props.datosCiudad;
     const climaPorCoords = props.climaPorCoords;
-    const pruebaLevantarEstado = props.pruebaLevantarEstado;
+    const levantarDatosCiudad = props.levantarDatosCiudad;
     const coordsCiudadCargando = props.coordsCiudadCargando;
 
-
+ 
     return(
         <div>
             {
-                !coordsCiudadCargando && climaPorCoords?.datos?(
-                    <CuerpoDatos datos={climaPorCoords.datos} datosNombre={datosCiudad} cargando={climaPorCoords.cargando}></CuerpoDatos>
+                !coordsCiudadCargando?(
+                    <CuerpoDatos 
+                        datos={climaPorCoords.datos} 
+                        datosNombre={datosCiudad} 
+                        cargando={climaPorCoords.cargando}>
+                    </CuerpoDatos>
                    
                 ):(
-                    <CiudadesBuscadas ciudades={climaCiudadesPorNombre.datos} cargando={climaCiudadesPorNombre.cargando} pruebaLevantarEstado={pruebaLevantarEstado}></CiudadesBuscadas>
+                    <CiudadesBuscadas 
+                        ciudades={climaCiudadesPorNombre.datos} 
+                        cargando={climaCiudadesPorNombre.cargando} 
+                        levantarDatosCiudad={levantarDatosCiudad}>
+                    </CiudadesBuscadas>
                 )                
             }
         </div>

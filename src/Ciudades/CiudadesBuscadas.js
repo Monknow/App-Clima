@@ -16,7 +16,7 @@ function CiudadesBuscadas(props){
                         {ciudades.list.map((datosCiudad)=>{
                             keyID += 1;
                     
-                            return <Ciudad key={keyID} datos={datosCiudad} pruebaLevantarEstado={props.pruebaLevantarEstado} cargando={cargando}></Ciudad>
+                            return <Ciudad key={keyID} datos={datosCiudad} levantarDatosCiudad={props.levantarDatosCiudad} cargando={cargando}></Ciudad>
                         })}
                     </div>
                 )

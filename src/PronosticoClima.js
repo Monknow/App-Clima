@@ -20,7 +20,7 @@ function PronosticoClima() {
   const mensajeResultado = resultadoClimaCiudadesPorNombre.mensajeResultado;
   const mensajeDeCarga = resultadoClimaCiudadesPorNombre.cargando;
 
-  const pruebaLevantarEstado = (datosCiudadLevantados, coordsCiudadLevantados, coordsCiudadCargandoLevantados) =>{
+  const levantarDatosCiudad = (datosCiudadLevantados, coordsCiudadLevantados, coordsCiudadCargandoLevantados) =>{
     setDatosCiudad(datosCiudadLevantados);
     setCoordsCiudad(coordsCiudadLevantados);
     setCoordsCiudadCargando(coordsCiudadCargandoLevantados);
@@ -54,7 +54,7 @@ function PronosticoClima() {
               datosCiudad={datosCiudad} 
               coordsCiudadCargando={coordsCiudadCargando} 
               climaPorCoords={resultadoClimaPorCoords} 
-              pruebaLevantarEstado={pruebaLevantarEstado}>
+              levantarDatosCiudad={levantarDatosCiudad}>
             </Contenido>
           )}
         </div>

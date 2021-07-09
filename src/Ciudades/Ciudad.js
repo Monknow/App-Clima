@@ -5,14 +5,14 @@ function Ciudad(props){
     const temperatura = Math.floor(datos.main.temp - 273.15);
 
     return(
-        <div className="ciudad">
+        <div className="ciudad" onClick={() => {
+            props.levantarDatosCiudad(props.datos, props.datos.coord, false);
+            }}>
             {
                 cargando?(
                     <h2>Cargando</h2>
                 ):(
-                    <div onClick={() => {
-                        props.pruebaLevantarEstado(props.datos, props.datos.coord, false);
-                        }}>
+                    <div>
                             
                         <h3>{datos.name}, {datos.sys.country}</h3>
                         <ul>

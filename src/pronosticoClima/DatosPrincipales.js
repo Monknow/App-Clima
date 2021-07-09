@@ -1,16 +1,31 @@
 import DatosBasicos from "./DatosBasicos";
+import Temperatura from "./Temperatura";
 
 function HeaderDatos(props) {
-
   const datos = props.datos;
   const datosNombreLugar = props.datosNombreLugar;
+
     return (
       <div className="datos-principales">
         <header className="datos-principales-header"> 
             <h1>{`${datosNombreLugar.name}, ${datosNombreLugar.sys.country}`}</h1>
-            <h2>{`${datos.current.temp}°`}</h2>
-            <h2>{`${Math.floor(datos.daily[0].temp.min)}°`}/
-                {`${Math.floor(datos.daily[0].temp.max)}°`}
+            <Temperatura 
+              temperaturaValor={datos.current.temp}
+              unidadTemperatura={props.unidadTemperatura}
+              etiqueta="h1">
+            </Temperatura>
+            <h2>            
+              <Temperatura 
+                temperaturaValor={datos.daily[0].temp.min}
+                unidadTemperatura={props.unidadTemperatura}
+                etiqueta="span">
+              </Temperatura>
+            /
+              <Temperatura 
+                temperaturaValor={datos.daily[0].temp.max}
+                unidadTemperatura={props.unidadTemperatura}
+                etiqueta="span">
+              </Temperatura>
             </h2>
             <h3 className="datos-principales-descripcion">{datos.current.weather[0].description}</h3>
             <img 

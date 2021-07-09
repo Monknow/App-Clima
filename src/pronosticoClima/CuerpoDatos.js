@@ -1,26 +1,45 @@
+import {useState} from "react";
+
 import DatosPrincipales from "./DatosPrincipales";
-import DatosBasicos from "./DatosBasicos";
 import PronosticoSemana from "./PronosticoSemana";
 import GraficaDia from "./GraficaDia";
-import PantallaCarga from "./PantallaCarga";
+import UnidadTemperatura from "./UnidadTemperatura";
+
 
 function CuerpoDatos(props){
+    const [unidadTemperatura, setUnidadTemperatura] = useState("C");
+
     const datos = props.datos; 
     const datosNombre = props.datosNombre;
-    const cargando = props.cargando;
 
-    console.log(cargando);
+    const levantarUnidadTemperatura = (unidadLevantada) =>{
+        setUnidadTemperatura(unidadLevantada);
+    }
 
     return(
-        <div className="cuerpo-datos">
+        <div>
             {
-                cargando?(
-                        <h1>Cargando</h1>
+                props.cargando?(
+                    <h1 className="mensaje-resultado">Cargando</h1>
                 ):(
                     <div className="clima-datos">
-                        <DatosPrincipales datos={datos} datosNombreLugar={datosNombre}></DatosPrincipales>
-                        <PronosticoSemana datos={datos}></PronosticoSemana>
-                        <GraficaDia datos={datos.hourly}></GraficaDia>
+                        <UnidadTemperatura 
+                            levantarUnidadTemperatura={levantarUnidadTemperatura}
+                            unidadTemperatura={unidadTemperatura}>  
+                        </UnidadTemperatura>
+                        <DatosPrincipales 
+                            datos={datos} 
+                            datosNombreLugar={datosNombre}
+                            unidadTemperatura={unidadTemperatura}>  
+                        </DatosPrincipales>
+                        <PronosticoSemana 
+                            datos={datos}
+                            unidadTemperatura={unidadTemperatura}>
+                        </PronosticoSemana>
+                        <GraficaDia 
+                            datos={datos.hourly}
+                            unidadTemperatura={unidadTemperatura}>
+                        </GraficaDia>
                     </div>
                 )
 
