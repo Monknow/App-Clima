@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/App-Clima/static/css/main.d201809a.chunk.css",
-    "main.js": "/App-Clima/static/js/main.516f356b.chunk.js",
-    "main.js.map": "/App-Clima/static/js/main.516f356b.chunk.js.map",
-    "runtime-main.js": "/App-Clima/static/js/runtime-main.cda66e82.js",
-    "runtime-main.js.map": "/App-Clima/static/js/runtime-main.cda66e82.js.map",
-    "static/js/2.fab7156e.chunk.js": "/App-Clima/static/js/2.fab7156e.chunk.js",
-    "static/js/2.fab7156e.chunk.js.map": "/App-Clima/static/js/2.fab7156e.chunk.js.map",
-    "static/js/3.d3a8a8e6.chunk.js": "/App-Clima/static/js/3.d3a8a8e6.chunk.js",
-    "static/js/3.d3a8a8e6.chunk.js.map": "/App-Clima/static/js/3.d3a8a8e6.chunk.js.map",
+    "main.css": "/App-Clima/static/css/main.9c3a30e4.chunk.css",
+    "main.js": "/App-Clima/static/js/main.cfcec5f5.chunk.js",
+    "main.js.map": "/App-Clima/static/js/main.cfcec5f5.chunk.js.map",
+    "runtime-main.js": "/App-Clima/static/js/runtime-main.edc9ad43.js",
+    "runtime-main.js.map": "/App-Clima/static/js/runtime-main.edc9ad43.js.map",
+    "static/js/2.4dd762ed.chunk.js": "/App-Clima/static/js/2.4dd762ed.chunk.js",
+    "static/js/2.4dd762ed.chunk.js.map": "/App-Clima/static/js/2.4dd762ed.chunk.js.map",
+    "static/js/3.231aff63.chunk.js": "/App-Clima/static/js/3.231aff63.chunk.js",
+    "static/js/3.231aff63.chunk.js.map": "/App-Clima/static/js/3.231aff63.chunk.js.map",
     "index.html": "/App-Clima/index.html",
-    "static/css/main.d201809a.chunk.css.map": "/App-Clima/static/css/main.d201809a.chunk.css.map",
-    "static/js/2.fab7156e.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.fab7156e.chunk.js.LICENSE.txt",
+    "static/css/main.9c3a30e4.chunk.css.map": "/App-Clima/static/css/main.9c3a30e4.chunk.css.map",
+    "static/js/2.4dd762ed.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.4dd762ed.chunk.js.LICENSE.txt",
+    "static/media/logo-app.d42c21b9.png": "/App-Clima/static/media/logo-app.d42c21b9.png",
     "static/media/index.css": "/App-Clima/static/media/topography.3b988715.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cda66e82.js",
-    "static/js/2.fab7156e.chunk.js",
-    "static/css/main.d201809a.chunk.css",
-    "static/js/main.516f356b.chunk.js"
+    "static/js/runtime-main.edc9ad43.js",
+    "static/js/2.4dd762ed.chunk.js",
+    "static/css/main.9c3a30e4.chunk.css",
+    "static/js/main.cfcec5f5.chunk.js"
   ]
 }
