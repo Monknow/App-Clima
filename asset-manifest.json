@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/App-Clima/static/css/main.9c3a30e4.chunk.css",
-    "main.js": "/App-Clima/static/js/main.cfcec5f5.chunk.js",
-    "main.js.map": "/App-Clima/static/js/main.cfcec5f5.chunk.js.map",
-    "runtime-main.js": "/App-Clima/static/js/runtime-main.edc9ad43.js",
-    "runtime-main.js.map": "/App-Clima/static/js/runtime-main.edc9ad43.js.map",
-    "static/js/2.4dd762ed.chunk.js": "/App-Clima/static/js/2.4dd762ed.chunk.js",
-    "static/js/2.4dd762ed.chunk.js.map": "/App-Clima/static/js/2.4dd762ed.chunk.js.map",
-    "static/js/3.231aff63.chunk.js": "/App-Clima/static/js/3.231aff63.chunk.js",
-    "static/js/3.231aff63.chunk.js.map": "/App-Clima/static/js/3.231aff63.chunk.js.map",
+    "main.css": "/App-Clima/static/css/main.9ef189c6.chunk.css",
+    "main.js": "/App-Clima/static/js/main.f56e19ee.chunk.js",
+    "main.js.map": "/App-Clima/static/js/main.f56e19ee.chunk.js.map",
+    "runtime-main.js": "/App-Clima/static/js/runtime-main.3efdd64b.js",
+    "runtime-main.js.map": "/App-Clima/static/js/runtime-main.3efdd64b.js.map",
+    "static/js/2.e41eb2f8.chunk.js": "/App-Clima/static/js/2.e41eb2f8.chunk.js",
+    "static/js/2.e41eb2f8.chunk.js.map": "/App-Clima/static/js/2.e41eb2f8.chunk.js.map",
+    "static/js/3.14f48f1a.chunk.js": "/App-Clima/static/js/3.14f48f1a.chunk.js",
+    "static/js/3.14f48f1a.chunk.js.map": "/App-Clima/static/js/3.14f48f1a.chunk.js.map",
     "index.html": "/App-Clima/index.html",
-    "static/css/main.9c3a30e4.chunk.css.map": "/App-Clima/static/css/main.9c3a30e4.chunk.css.map",
-    "static/js/2.4dd762ed.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.4dd762ed.chunk.js.LICENSE.txt",
-    "static/media/logo-app.d42c21b9.png": "/App-Clima/static/media/logo-app.d42c21b9.png",
-    "static/media/index.css": "/App-Clima/static/media/topography.3b988715.svg"
+    "static/css/main.9ef189c6.chunk.css.map": "/App-Clima/static/css/main.9ef189c6.chunk.css.map",
+    "static/js/2.e41eb2f8.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.e41eb2f8.chunk.js.LICENSE.txt",
+    "static/media/logo-app.d42c21b9.png": "/App-Clima/static/media/logo-app.d42c21b9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.edc9ad43.js",
-    "static/js/2.4dd762ed.chunk.js",
-    "static/css/main.9c3a30e4.chunk.css",
-    "static/js/main.cfcec5f5.chunk.js"
+    "static/js/runtime-main.3efdd64b.js",
+    "static/js/2.e41eb2f8.chunk.js",
+    "static/css/main.9ef189c6.chunk.css",
+    "static/js/main.f56e19ee.chunk.js"
   ]
 }
