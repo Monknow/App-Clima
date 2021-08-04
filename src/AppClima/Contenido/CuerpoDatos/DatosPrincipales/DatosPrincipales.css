@@ -1,0 +1,48 @@
+.datos-principales{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column;
+    margin-top: 20px;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.datos-principales-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.datos-principales-header h1, h2, h3{
+    margin: 5px 0px;
+    width: auto;
+}
+
+.datos-principales h1{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.datos-principales-imagen{
+    width: calc(150px - 4vw);
+    margin: 20px;
+    border-radius: 50%;
+    background-color: #CBF3F0;
+}
+
+
+.datos-principales-descripcion{
+    text-transform: capitalize; 
+}
+
+
+@media (max-width: 900px){
+    .datos-principales-header{
+        align-items: center;
+    }
+    
+}

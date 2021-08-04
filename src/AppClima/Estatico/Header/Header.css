@@ -1,0 +1,14 @@
+.titulo-app{
+    padding: 20px;
+    margin-top: calc(30px + clamp(50px, 6vh, 100px));
+    border-radius: 10px;
+    font-size: clamp(10px, 3vw, 30px);
+    text-align: center;
+    color: #000000;
+    background-color: #fff;
+  }
+  
+  .titulo-app h1{
+    font-weight: 600;
+  }
+  

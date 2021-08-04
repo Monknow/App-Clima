@@ -1,0 +1,15 @@
+.buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    margin: 20px;
+}
+
+@media (max-width: 900px){
+
+    .buscador{
+        flex-flow: column;
+    }
+
+}

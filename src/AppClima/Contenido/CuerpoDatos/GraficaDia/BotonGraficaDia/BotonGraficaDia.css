@@ -1,0 +1,67 @@
+.grafica-dia-botones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grafica-dia-botones div{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grafica-dia-boton{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 10px;
+    border: solid 1px #999;
+    border-radius: 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.contenedor-boton-temperatura .activo{
+    background-color: #f2a735;
+    border: solid 1px #bf790d;
+}
+
+.contenedor-boton-temperatura .activo:active{
+    background-color: hsl(36, 88%, 50%);
+
+}
+
+.contenedor-boton-humedad .activo{
+    background-color: #4b87cc;
+    border: solid 1px #2b62a1;
+}
+
+.contenedor-boton-humedad .activo:active{
+    background-color: hsl(212, 56%, 45%);
+}
+
+.contenedor-boton-viento .activo{
+    background-color: #a662de;
+    border: solid 1px #7e34a8;
+}
+
+.contenedor-boton-viento .activo:active{
+    background-color: hsl(273, 65%, 53%);
+}
+
+@media (max-width: 580px){
+    .grafica-dia-botones{
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .grafica-dia-botones div{
+        width: 100%;
+    }
+    
+    .grafica-dia-boton{
+        width: 100%;
+    }
+}

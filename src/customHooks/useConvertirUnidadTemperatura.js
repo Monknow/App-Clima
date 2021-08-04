@@ -6,8 +6,6 @@ function useConvertirUnidadTemperatura(valorTemperatura, unidadActual, unidadRes
     const [valor, setValor] = useState(valorTemperatura);
     const [unidad, setUnidad] = useState("C");
 
-/*     console.log(`${valorTemperatura}, ${unidadActual}, ${unidadResultado} = ${valor} ${unidad}`);
- */
     useEffect(()=>{
         if(unidadActual === "C" && unidadResultado === "F"){
             setValor((valorTemperatura * 9/5) + 32);

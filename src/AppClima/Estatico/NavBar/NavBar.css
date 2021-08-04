@@ -1,0 +1,45 @@
+:root{
+    --altura-navbar: clamp(50px, 6vh, 100px);
+}
+
+.nav-top-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--altura-navbar);
+    box-sizing: border-box;
+    padding: 0px 20px;
+    background-color: #fff; 
+}
+
+.nav-top-navbar a{
+    margin: 20px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: clamp(9px, 2.5vw, 14px);
+}
+
+.logo-app{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.logo-image{
+    height: calc(var(--altura-navbar) - 10px);
+    margin-right: 4px;
+}
+
+.logo-texto{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+}
+
+.logo-texto span{
+    display: inline-block;
+    font-weight: 700;
+}

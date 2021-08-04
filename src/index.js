@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import PronosticoClima from './PronosticoClima.js';
+import AppClima from './AppClima/AppClima.js'; 
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <PronosticoClima/>
+    <AppClima/>
   </React.StrictMode>,
   document.getElementById('root')
 );

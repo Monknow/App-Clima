@@ -1,0 +1,22 @@
+.pronostico-dia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+    margin: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.pronostico-dia p{
+    margin: 6px 0px;
+}
+
+
+.dia-imagen{
+    width: clamp(75px, 7vw, 110px);
+    height: auto;
+    border-radius: 50%;
+    background-color: #CBF3F0;
+}

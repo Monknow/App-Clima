@@ -12,7 +12,7 @@ function useFetchClimaPorNombre (lugarBuscado, lugarCargando) {
         if(lugarCargando === false && lugarBuscado !== null){
             const montarDatos = async () => {
 
-                const urlLugarBuscado = `http://api.openweathermap.org/data/2.5/weather?q=${lugarBuscado}&lang=es&units=metric&appid=cfdf46ac4ccb5e3a4775488af2e57ce0`;
+                const urlLugarBuscado = `https://api.openweathermap.org/data/2.5/weather?q=${lugarBuscado}&lang=es&units=metric&appid=cfdf46ac4ccb5e3a4775488af2e57ce0`;
     
                 setCargando(true);
                 setMensajeResultado("Cargando");

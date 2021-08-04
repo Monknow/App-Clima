@@ -1,0 +1,35 @@
+.grafica-dia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grafica-dia-titulo{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+.grafica-dia-container{
+    max-width: 98%;
+    font-size: 12px;
+}
+
+
+/* @media (max-width: 900px){
+    .grafica-dia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    
+}
+
+ */

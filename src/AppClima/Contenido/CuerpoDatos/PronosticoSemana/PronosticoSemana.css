@@ -1,0 +1,26 @@
+.pronostico-semana{
+    margin-top: 20px;  
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.pronostico-semana-dias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 5px 0px;
+}
+
+.pronostico-semana-primer-dia{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pronostico-semana-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}

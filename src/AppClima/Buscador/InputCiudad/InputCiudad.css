@@ -1,0 +1,9 @@
+.input-ciudad{
+    display: block;
+    height: 35px;
+    width: clamp(100px, 35vw, 400px);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    font-size: clamp(15px, 2vw, 20px);
+}  

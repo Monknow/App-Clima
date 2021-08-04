@@ -1,0 +1,24 @@
+.unidad-temperatura{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .unidad-temperatura button{
+    margin: 0px 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    color: #777;
+  }
+  
+  .unidad-temperatura .activo{
+    color: #000;
+  }
+  
+  
+  .unidad-temperatura span{
+    font-size: 24px;
+  }

@@ -1,0 +1,22 @@
+.boton-busqueda{
+    background-color: #FF9F1C;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+  }
+  
+.boton-busqueda:active{
+  background-color: #E08300;
+}
+
+@media (max-width: 900px){
+  .boton-busqueda{
+    margin: 20px 20px 0px 20px;
+  }
+
+}
+
