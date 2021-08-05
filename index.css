@@ -13,6 +13,7 @@ body{
     min-height: 100vh;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-attachment: fixed;
 }
 
 
@@ -29,11 +30,12 @@ body{
 
 .footer-info a{
     color: black;
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
 }
-/* 
-@media (max-width: 300px){
-    .footer-info{
-        justify-content: center;
-    }
-} */
+
+
+.footer-info a:focus{
+    outline: 1px solid #4158D0;
+}
