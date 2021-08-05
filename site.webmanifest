@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "App Clima",
+    "short_name": "App Clima",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
