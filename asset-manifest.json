@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/App-Clima/static/css/main.9ef189c6.chunk.css",
-    "main.js": "/App-Clima/static/js/main.f56e19ee.chunk.js",
-    "main.js.map": "/App-Clima/static/js/main.f56e19ee.chunk.js.map",
+    "main.css": "/App-Clima/static/css/main.d03d9218.chunk.css",
+    "main.js": "/App-Clima/static/js/main.b5f3801c.chunk.js",
+    "main.js.map": "/App-Clima/static/js/main.b5f3801c.chunk.js.map",
     "runtime-main.js": "/App-Clima/static/js/runtime-main.3efdd64b.js",
     "runtime-main.js.map": "/App-Clima/static/js/runtime-main.3efdd64b.js.map",
-    "static/js/2.e41eb2f8.chunk.js": "/App-Clima/static/js/2.e41eb2f8.chunk.js",
-    "static/js/2.e41eb2f8.chunk.js.map": "/App-Clima/static/js/2.e41eb2f8.chunk.js.map",
+    "static/js/2.63c277a1.chunk.js": "/App-Clima/static/js/2.63c277a1.chunk.js",
+    "static/js/2.63c277a1.chunk.js.map": "/App-Clima/static/js/2.63c277a1.chunk.js.map",
     "static/js/3.14f48f1a.chunk.js": "/App-Clima/static/js/3.14f48f1a.chunk.js",
     "static/js/3.14f48f1a.chunk.js.map": "/App-Clima/static/js/3.14f48f1a.chunk.js.map",
     "index.html": "/App-Clima/index.html",
-    "static/css/main.9ef189c6.chunk.css.map": "/App-Clima/static/css/main.9ef189c6.chunk.css.map",
-    "static/js/2.e41eb2f8.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.e41eb2f8.chunk.js.LICENSE.txt",
-    "static/media/logo-app.d42c21b9.png": "/App-Clima/static/media/logo-app.d42c21b9.png"
+    "static/css/main.d03d9218.chunk.css.map": "/App-Clima/static/css/main.d03d9218.chunk.css.map",
+    "static/js/2.63c277a1.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.63c277a1.chunk.js.LICENSE.txt",
+    "static/media/logo-app-clima.9744c283.png": "/App-Clima/static/media/logo-app-clima.9744c283.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3efdd64b.js",
-    "static/js/2.e41eb2f8.chunk.js",
-    "static/css/main.9ef189c6.chunk.css",
-    "static/js/main.f56e19ee.chunk.js"
+    "static/js/2.63c277a1.chunk.js",
+    "static/css/main.d03d9218.chunk.css",
+    "static/js/main.b5f3801c.chunk.js"
   ]
 }
