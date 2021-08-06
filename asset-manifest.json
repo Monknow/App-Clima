@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/App-Clima/static/css/main.a7bca36c.chunk.css",
-    "main.js": "/App-Clima/static/js/main.0945255f.chunk.js",
-    "main.js.map": "/App-Clima/static/js/main.0945255f.chunk.js.map",
+    "main.css": "/App-Clima/static/css/main.78ff2a24.chunk.css",
+    "main.js": "/App-Clima/static/js/main.a0fef08e.chunk.js",
+    "main.js.map": "/App-Clima/static/js/main.a0fef08e.chunk.js.map",
     "runtime-main.js": "/App-Clima/static/js/runtime-main.1d4291e8.js",
     "runtime-main.js.map": "/App-Clima/static/js/runtime-main.1d4291e8.js.map",
     "static/js/2.097e46d8.chunk.js": "/App-Clima/static/js/2.097e46d8.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.c85c5ae5.chunk.js": "/App-Clima/static/js/3.c85c5ae5.chunk.js",
     "static/js/3.c85c5ae5.chunk.js.map": "/App-Clima/static/js/3.c85c5ae5.chunk.js.map",
     "index.html": "/App-Clima/index.html",
-    "static/css/main.a7bca36c.chunk.css.map": "/App-Clima/static/css/main.a7bca36c.chunk.css.map",
+    "static/css/main.78ff2a24.chunk.css.map": "/App-Clima/static/css/main.78ff2a24.chunk.css.map",
     "static/js/2.097e46d8.chunk.js.LICENSE.txt": "/App-Clima/static/js/2.097e46d8.chunk.js.LICENSE.txt",
     "static/media/logo-app-clima.9744c283.png": "/App-Clima/static/media/logo-app-clima.9744c283.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d4291e8.js",
     "static/js/2.097e46d8.chunk.js",
-    "static/css/main.a7bca36c.chunk.css",
-    "static/js/main.0945255f.chunk.js"
+    "static/css/main.78ff2a24.chunk.css",
+    "static/js/main.a0fef08e.chunk.js"
   ]
 }
