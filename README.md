@@ -1,2 +1,2 @@
 # App Clima
-Aplicación del clima para mi proyecto personal
+Aplicación del clima creada con React
